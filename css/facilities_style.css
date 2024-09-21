@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+.header {
+    padding-bottom: 60px;
+}
+
+.navbar {
+    background-color: #0e1242;
+    padding: 10px 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: auto;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-img:hover {
+    cursor: pointer;
+}
+
+.logo span {
+    color: white;
+    font-size: 24px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu li:hover a {
+    background-color: #4b67b3;
+}
+
+/* Dropdown menu styling */
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0e1242;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+}
+
+.dropdown-content a:hover {
+    background-color: #0e1242;
+}
+
+/* Responsive styles for mobile */
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    .menu li {
+        text-align: center;
+    }
+
+    .menu li a {
+        padding: 15px;
+    }
+
+    #menu-toggle:checked+.hamburger+.menu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+.header {
+    position: relative;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/Images/banner.jpeg') no-repeat center center/cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.banner-text {
+    text-align: center;
+    color: navy;
+    position: relative;
+    z-index: 2;
+}
+
+.banner-text h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #807a7a2d;
+    padding: 50px;
+    width: 80%;
+    border-radius: 8px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.heading {
+    padding: 1.5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container2 h3 {
+    padding-bottom: 0.4rem;
+    padding-top: 1.5rem;
+}
+
+.container2 p {
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #ffcc00;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-info p, .social-links a {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.social-links a {
+    margin-right: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+}
+
+.map {
+    width: 100%;
+    height: 200px;
+    border: 0;
+}
+
+.copy-right {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+
+span{
+    color: #ffcc00;
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

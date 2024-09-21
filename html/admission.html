@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Application Form | DUV International School</title>
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="/css/admission_style.css">
+</head>
+
+<body>
+    <section>
+        <header>
+
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="/index.html"><img src="/Images/logo.jpg" alt="School Logo" class="logo-img"></a>
+                    <span>DUV International School</span>
+                </div>
+                <input type="checkbox" id="menu-toggle" />
+                <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+                <ul class="menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#welcome">About Us</a>
+                        <ul class="dropdown-content">
+                            <li><a href="/html/vision_mission.html">Mission & Vision</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Curriculum</a>
+                        <ul class="dropdown-content">
+                            <li><a href="/html/pre_primary.html">Pre-Primary</a></li>
+                            <li><a href="/html/primary.html">Primary</a></li>
+                            <li><a href="/html/middle.html">Middle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/html/gallery.html">Gallery</a></li>
+                    <li><a href="/html/facilities.html">Facilities</a></li>
+                    <li><a href="/html/admission.html">Admission Form</a></li>
+                    <li><a href="/html/blog.html">Blog</a></li>
+                    <li><a href="/html/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+
+    <div class="header">
+        <header>
+            <div class="banner">
+                <div class="banner-text">
+                    <h2>Application Form</h2>
+                    <p>"Complete the application form to take the first step toward a brighter future with us."</p>
+                    <button type="button"
+                        onclick="alert('The form has not been uploaded yet. Please check back later.')">Download
+                        Form</button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <h2>Application Form</h2>
+    <hr class="divider">
+
+    <p class="required">(Please ensure all fields are filled out)</p>
+
+    <section class="form">
+        <div class="container">
+            <form id="admission-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="first-name">Student First Name</label><br>
+                    <input type="text" id="first-name" name="first-name" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Student Last Name</label><br>
+                    <input type="text" id="last-name" name="last-name" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="aaddhaar-name">Aadhaar Name</label><br>
+                    <input type="text" id="aaddhaar-name" name="aaddhaar-name" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <p>Gender</p>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="emai">Enter your email</label><br>
+                    <input type="email" id="email" name="email" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Contact Number:</label><br>
+                    <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label><br>
+                    <input type="date" id="dob" name="dob" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="class">Class Applying For</label><br>
+                    <input type="text" id="class" name="class" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <p>Category(select one)</p>
+                    <input type="checkbox" id="general" name="general" value="General">
+                    <label for="general">General</label>
+                    <input type="checkbox" id="sc_st" name="sc_st" value="SC/ST">
+                    <label for="sc_st">SC/ST</label>
+                    <input type="checkbox" id="obc" name="obc" value="OBC">
+                    <label for="obc">OBC</label>
+                    <input type="checkbox" id="ews" name="ews" value="EWS">
+                    <label for="ews">EWS</label>
+                    <input type="checkbox" id="other" name="other" value="Other">
+                    <label for="other">Other</label><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="religion">Religion</label><br>
+                    <input type="text" id="religion" name="religion" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="fname">Father's Name</label><br>
+                    <input type="text" id="fname" name="fname" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="fqualification">Father's Qualification</label><br>
+                    <input type="text" id="fqualification" name="fqualification" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="foccupation">Father's Occupation</label><br>
+                    <input type="text" id="foccupation" name="foccupation" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="mname">Mother's name</label><br>
+                    <input type="text" id="mname" name="mname" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="mqualification">Mother's Qualification</label><br>
+                    <input type="text" id="mqualification" name="mqualification" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="moccupation">Mother's Occupation</label><br>
+                    <input type="text" id="moccupation" name="moccupation" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address</label><br>
+                    <input type="text" id="address" name="address" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="school">Last Attended School name</label><br>
+                    <input type="text" id="school" name="school" required size="50"><br><br>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Submit Form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="/html/admission.html">Admissions</a></li>
+                    <li><a href="#">Our Campus</a></li>
+                    <li><a href="#">Parent Corner</a></li>
+                    <li><a href="#">Publications</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section contact-info">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> info@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 9891180055</p>
+                <p><i class="fas fa-map-marker-alt"></i> Sector 123 Noida</p>
+            </div>
+
+
+            <div class="footer-section social-links">
+                <h4>Follow Us</h4>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+
+
+            <div class="footer-section">
+                <h4>Our Location</h4>
+                <iframe class="map"
+                    src="https://www.google.com/maps/place/DUV+International+School/@28.591733,77.410961,16z/data=!4m6!3m5!1s0x390cef7530000001:0x47e1196d9849c511!8m2!3d28.5917331!4d77.4109611!16s%2Fg%2F11fsvrhjcx?hl=en-US&entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>&copy; 2024 Your School Name. All Rights Reserved.</p>
+            <p>Created By - Team <span>TheCrypticByte </span></p>
+            <p>(Only for Project Purpose)</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

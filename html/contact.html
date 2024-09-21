@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us| DUV International School</title>
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="/css/contact_style.css">
+</head>
+
+<body>
+    <section>
+        <header>
+
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="/index.html"><img src="/Images/logo.jpg" alt="School Logo" class="logo-img"></a>
+                    <span>DUV International School</span>
+                </div>
+                <input type="checkbox" id="menu-toggle" />
+                <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+                <ul class="menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#welcome">About Us</a>
+                        <ul class="dropdown-content">
+                            <li><a href="/html/vision_mission.html">Mission & Vision</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Curriculum</a>
+                        <ul class="dropdown-content">
+                            <li><a href="/html/pre_primary.html">Pre-Primary</a></li>
+                            <li><a href="/html/primary.html">Primary</a></li>
+                            <li><a href="/html/middle.html">Middle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/html/gallery.html">Gallery</a></li>
+                    <li><a href="/html/facilities.html">Facilities</a></li>
+                    <li><a href="/html/admission.html">Admission Form</a></li>
+                    <li><a href="/html/blog.html">Blog</a></li>
+                    <li><a href="/html/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <div class="header">
+        <header>
+            <div class="banner">
+                <div class="banner-text">
+                    <h2>Contact Us</h2>
+                    <p>"We'd love to hear from you! Please fill out the form below, and we'll get back to you as soon as
+                        possible."</p>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Main Section-->
+
+    <h2>Enquiry Form</h2>
+    <hr class="divider">
+
+    <section class="form">
+        <div class="container">
+            <form id="admission-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Your Name</label><br>
+                    <input type="text" id="name" name="name" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="emai">Your email</label><br>
+                    <input type="email" id="email" name="email" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label><br>
+                    <input type="text" id="subject" name="subject" required size="50"><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="msg"><textarea name="msg" id="msg" placeholder="Your message(optional)" rows="5"
+                            cols="48"></textarea><br></label><br>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Submit Form</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <div class="map1">
+        <div id="map"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="/html/admission.html">Admissions</a></li>
+                    <li><a href="#">Our Campus</a></li>
+                    <li><a href="#">Parent Corner</a></li>
+                    <li><a href="#">Publications</a></li>
+                </ul>
+            </div>
+    
+        
+            <div class="footer-section contact-info">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> info@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 9891180055</p>
+                <p><i class="fas fa-map-marker-alt"></i> Sector 123 Noida</p>
+            </div>
+    
+    
+            <div class="footer-section social-links">
+                <h4>Follow Us</h4>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+    
+    
+            <div class="footer-section">
+                <h4>Our Location</h4>
+                <iframe class="map"
+                    src="https://www.google.com/maps/place/DUV+International+School/@28.591733,77.410961,16z/data=!4m6!3m5!1s0x390cef7530000001:0x47e1196d9849c511!8m2!3d28.5917331!4d77.4109611!16s%2Fg%2F11fsvrhjcx?hl=en-US&entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>&copy; 2024 Your School Name. All Rights Reserved.</p>
+            <p>Created By - Team <span>TheCrypticByte </span></p>
+            <p>(Only for Project Purpose)</p>
+        </div>
+        </footer>
+    
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/js/contact.js"></script>
+
+</body>
+
+</html>
